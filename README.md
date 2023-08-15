@@ -13,7 +13,7 @@
 
 To get started, follow these steps:
 
-1. Clone the repository: `git clone [https://github.com/your-username/socket.io-chat.git](https://github.com/Julian045/socket.io-chat.git)`
+1. Clone the repository: `git clone (https://github.com/Julian045/socket.io-chat.git)`
 2. Navigate to the project directory: `cd socket.io-chat`
 3. Install dependencies: `npm install`
 4. Start the development server: `npm start`
