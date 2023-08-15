@@ -5,7 +5,6 @@
 ## Features
 
 - Real-time messaging using Socket.IO.
-- Message timestamp and deletion after a specific time.
 - Automatic message deletion after a set time period.
 - Anti Spam (Send message every 2 seconds + cooldown)
 
