@@ -1,0 +1,94 @@
+body {
+    padding: 0;
+    margin: 0;
+    overflow-y: scroll;
+    font-family: monospace;
+    margin: 0;
+    background-color: #212121;
+}
+
+body,
+input {
+  font-family: 'DejaVu Sans Mono', monospace;
+  font-size: 12px;
+  tab-size: 4;
+  -moz-tab-size: 4;
+  -o-tab-size: 4;
+}
+
+input {
+  background: #212121;
+  border: none;
+  outline: none;
+  resize: none;
+  color: #fff;
+  align-items: center;
+  flex: 1;
+  margin: 0;
+  z-index: -1;
+}
+
+.text {
+    margin: 0;
+    margin-left: 1em;
+    max-width: 75%;
+    word-wrap: break-word;
+}
+
+.text p {
+    margin: 0;
+    color: white;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.message {
+    padding-bottom: 1em;
+}
+
+#footer {
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+#messages {
+    padding-top: 2em;
+}
+
+.nick {
+    float: left;
+    width: 16em;
+    margin-left: -17em;
+    margin-right: 1em;
+    text-align: right;
+    white-space: nowrap;
+    border-right: 1px solid #bebebe;
+    height: auto;
+    padding-right: 5px;
+}
+
+@media only screen and (max-width: 600px) {
+    .messages {
+      border: none;
+    }
+    #messages {
+      padding: 0.5em;
+    }
+    .message {
+      padding-bottom: 0.5em;
+    }
+    .nick {
+      margin: 0;
+      float: none;
+      text-align: left;
+      display: inline;
+    }
+    .text {
+      display: inline;
+    }
+}
