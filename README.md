@@ -1,6 +1,6 @@
 # Socket.IO Chat
 
- This is a real-time messaging application built using the Socket.IO library. With this chat application
+ This is a real-time messaging application built using the Socket.IO library.
 
 ## Features
 
