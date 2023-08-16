@@ -46,7 +46,7 @@ io.on('connection', socket => {
 
                 io.to(socket.room).emit('initial messages', messages);
                 io.to(socket.room).emit('system message', `Your message will be deleted 24hours after you send it.`);
-                io.to(socket.room).emit('Users online: ' + users.join(', '));
+                io.to(socket.room).emit('system message', 'Users online: ' + users.join(', '));
                 io.emit('system message', username + ' joined');
             }
         }
@@ -123,7 +123,7 @@ io.on('connection', socket => {
 
 function removeMessage(messageToRemove) {
     try {
-        const messages = JSON.parse(fs.readFileSync('messages.json', 'utf-8'));
+        const messages = JSON.parse(readFileSync('messages.json', 'utf-8'));
       
         const updatedMessages = messages.filter(message => {
             return (message.sender !== messageToRemove.sender || message.message !== messageToRemove.message || message.timestamp !== messageToRemove.timestamp);
